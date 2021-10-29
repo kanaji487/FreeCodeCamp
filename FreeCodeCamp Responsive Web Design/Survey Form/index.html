@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel survey form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title">Travel survey form</h1>
+            <p id="description">Thank you for taking the time to complete the travel survey.</p>
+        </header>
+        <form id="survey-form">
+            <!-- name start -->
+            <div class="form-group">
+                <label id="name-label" for="name">Name</label>
+                <input type="text" id="name" class="form-control" placeholder="enter your name" required>
+            </div>
+            <!-- name end -->
+            <!-- email start -->
+            <div class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="enter your e-mail" required>
+            </div>
+            <!-- email end -->
+            <!-- age start -->
+            <div class="form-group">
+                <label id="number-label" for="number">Age</label>
+                <input type="number" name="age" id="number" min="10" max="50" class="form-control" placeholder="Age">
+            </div>
+            <!-- age end -->
+            <!-- Type of attraction start -->
+            <div class="form-group">
+                <p>Where do you like to travel ?</p>
+                <select id="dropdown" name="role" class="form-control" required>
+                  <option disabled selected value>Choose the place you like to visit.</option>
+                  <option value="Eco-tourism">Eco-tourism</option>
+                  <option value="Arts and Sciences Educational Attraction">Arts and Sciences Educational Attraction Standard</option>
+                  <option value="Historical Attraction">Historical Attraction</option>
+                  <option value="Natural Attraction">Natural Attraction</option>
+                  <option value="Recreational Attraction">Recreational Attraction</option>
+                  <option value="other">Other</option>
+                </select>
+            </div>
+            <!-- Type of attraction end -->
+            <!-- travel with start -->
+            <div class="form-group">
+                <p>Who do you like to travel with ?</p>
+                <label>
+                  <input name="user-recommend" value="alone" type="radio" class="input-radio" checked/>Alone</label>
+                <label>
+                  <input name="user-recommend" value="family" type="radio" class="input-radio"/>Family</label>
+                <label>
+                  <input name="user-recommend" value="friend" type="radio" class="input-radio"/>Friend</label>
+                <label>
+                  <input name="user-recommend" value="other" type="radio" class="input-radio"/>other</label>
+            </div>
+            <!-- travel with end -->
+            <!-- How do you travel ? start -->
+            <div class="form-group">
+                <p>How do you travel ?<span class="clue">(Check all that apply)</span></p>
+                <label>
+                    <input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox"/>Car</label>
+                <label>
+                    <input name="prefer" value="back-end-projects" type="checkbox" class="input-checkbox"/>Bus</label>
+                <label>
+                    <input name="prefer" value="data-visualization" type="checkbox" class="input-checkbox"/>Train</label>
+                <label>
+                    <input name="prefer" value="challenges" type="checkbox" class="input-checkbox"/>boat</label>
+                <label>
+                    <input name="prefer" value="open-source-community" type="checkbox" class="input-checkbox"/>Air plane</label>
+                <label>
+                    <input name="prefer" value="gitter-help-rooms" type="checkbox" class="input-checkbox"/>Bicycle</label>
+                <label>
+                    <input name="prefer" value="videos" type="checkbox" class="input-checkbox"/>Walk</label>
+            </div>
+            <!-- How do you travel ? end  -->
+            <!-- survey commend start -->
+            <div class="form-group">
+                <p>Do you have any commend for travel survey ?</p>
+                <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea>
+            </div>
+            <!-- survey commend end -->
+            <!-- survey btn start -->
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">Submit</button>
+            </div>
+            <!-- survey btn end -->
+    </div>
+        </form>
+    </div>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
